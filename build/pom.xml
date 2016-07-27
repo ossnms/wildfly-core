@@ -30,7 +30,7 @@
     <parent>
         <groupId>org.wildfly.core</groupId>
         <artifactId>wildfly-core-parent</artifactId>
-        <version>1.0.2.Final-ossnms-001</version>
+        <version>1.0.2.Final-ossnms-002</version>
     </parent>
 
     <artifactId>wildfly-core-build</artifactId>
