@@ -25,7 +25,7 @@
     <parent>
           <groupId>org.wildfly.core</groupId>
           <artifactId>wildfly-core-testsuite</artifactId>
-          <version>1.0.2.Final-ossnms-002</version>
+          <version>1.0.2.Final-ossnms-003</version>
           <relativePath>../pom.xml</relativePath>
      </parent>
 
