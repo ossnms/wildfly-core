@@ -50,7 +50,7 @@ public class ManagementWorkerService implements Service<XnioWorker> {
     public void start(StartContext startContext) throws StartException {
         final Xnio xnio = Xnio.getInstance();
         try {
-            worker = xnio.createWorker(null,  options, this::stopDone);
+            worker = xnio.createWorker(null,  options, new Runnable() { public void run() { stopDone(); } });
         } catch (IOException e) {
             throw new StartException(e);
         }
