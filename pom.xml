@@ -56,8 +56,8 @@
         <!-- Release Info -->
         <wildfly.core.release.version>${project.version}</wildfly.core.release.version>
         <wildfly.core.release.codename>Kenny</wildfly.core.release.codename>
-        <wildfly.core.scm.url>https://github.com/wildfly/wildfly-core</wildfly.core.scm.url>
-        <wildfly.core.scm.connection>git@github.com:wildfly/wildfly-core.git</wildfly.core.scm.connection>
+        <wildfly.core.scm.url>https://github.com/ossnms/wildfly-core</wildfly.core.scm.url>
+        <wildfly.core.scm.connection>git@github.com:ossnms/wildfly-core.git</wildfly.core.scm.connection>
 
         <!--
             Build configuration.  Override JBoss Parent settings as necessary.
