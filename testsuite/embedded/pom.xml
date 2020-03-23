@@ -24,7 +24,7 @@
     <parent>
         <artifactId>wildfly-core-testsuite</artifactId>
         <groupId>org.wildfly.core</groupId>
-        <version>7.0.0.Final</version>
+        <version>7.0.0.Final-ossnms-1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
