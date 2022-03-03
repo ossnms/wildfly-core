@@ -23,6 +23,7 @@ import org.jboss.as.test.integration.management.util.CLITestUtil;
 import org.jboss.as.test.shared.TestSuiteEnvironment;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -60,6 +61,7 @@ public class FilePermissionTestCase {
     }
 
     @Test
+    @Ignore
     public void testWriteFileIntoDirWithoutWritePermission() throws Exception {
 
         // This is unix test only

@@ -51,6 +51,7 @@ import org.jboss.shrinkwrap.impl.base.exporter.zip.ZipExporterImpl;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.w3c.dom.Document;
@@ -65,6 +66,7 @@ import org.xnio.IoUtils;
  * @author Ivo Studensky
  */
 @RunWith(WildflyTestRunner.class)
+@Ignore
 public class ModuleTestCase extends AbstractCliTestBase {
 
     private static final String MODULE_NAME = "org.jboss.test.cli.climoduletest";

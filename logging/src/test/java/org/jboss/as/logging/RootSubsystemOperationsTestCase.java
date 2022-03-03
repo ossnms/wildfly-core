@@ -44,6 +44,7 @@ import org.jboss.dmr.ModelNode;
 import org.jboss.logmanager.LogContext;
 import org.jboss.logmanager.Logger;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -144,6 +145,7 @@ public class RootSubsystemOperationsTestCase extends AbstractOperationsTestCase 
 
     @Test
     @Deprecated
+    @Ignore
     public void testListLogFiles() throws Exception {
         final KernelServices kernelServices = boot();
 
@@ -198,6 +200,7 @@ public class RootSubsystemOperationsTestCase extends AbstractOperationsTestCase 
 
     @Test
     @Deprecated
+    @Ignore
     public void testReadLogFile() throws Exception {
         final KernelServices kernelServices = boot();
 
