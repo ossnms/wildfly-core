@@ -172,7 +172,7 @@
         <version.commons-io>2.10.0</version.commons-io>
         <version.io.netty>4.1.100.Final</version.io.netty>
         <version.io.smallrye.jandex>3.1.5</version.io.smallrye.jandex>
-        <version.io.undertow>2.3.10.Final</version.io.undertow>
+        <version.io.undertow>2.3.12.Final</version.io.undertow>
         <version.jakarta.json.jakarta-json-api>2.1.2</version.jakarta.json.jakarta-json-api>
         <version.jakarta.interceptor.jakarta-interceptors-api>2.1.0</version.jakarta.interceptor.jakarta-interceptors-api>
         <version.jakarta.inject.jakarta.inject-api>2.0.1</version.jakarta.inject.jakarta.inject-api>
@@ -224,7 +224,7 @@
         <version.org.jboss.staxmapper>1.5.0.Final</version.org.jboss.staxmapper>
         <version.org.jboss.stdio>1.1.0.Final</version.org.jboss.stdio>
         <version.org.jboss.threads>2.4.0.Final</version.org.jboss.threads>
-        <version.org.jboss.xnio>3.8.11.Final</version.org.jboss.xnio>
+        <version.org.jboss.xnio>3.8.14.Final</version.org.jboss.xnio>
         <version.org.jboss.xnio.xnio-api>${version.org.jboss.xnio}</version.org.jboss.xnio.xnio-api>
         <version.org.jboss.xnio.xnio-nio>${version.org.jboss.xnio}</version.org.jboss.xnio.xnio-nio>
         <version.org.jmockit>1.39</version.org.jmockit>
