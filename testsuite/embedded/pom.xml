@@ -4,13 +4,11 @@
   ~ SPDX-License-Identifier: Apache-2.0
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>wildfly-core-testsuite</artifactId>
         <groupId>org.wildfly.core</groupId>
-        <version>22.0.2.Final-ossnms-1-SNAPSHOT</version>
+        <version>22.0.2.Final-ossnms-1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -108,7 +106,7 @@
                             <log-time>${galleon.log.time}</log-time>
                             <offline>true</offline>
                             <plugin-options>
-                                <jboss-maven-dist/>
+                                <jboss-maven-dist />
                                 <jboss-fork-embedded>${galleon.fork.embedded}</jboss-fork-embedded>
                             </plugin-options>
                             <feature-packs>
