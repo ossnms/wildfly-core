@@ -16,7 +16,7 @@
 
     <groupId>org.wildfly.core</groupId>
     <artifactId>wildfly-core-parent</artifactId>
-    <version>22.0.2.Final-ossnms-2-SNAPSHOT</version>
+    <version>22.0.2.Final-ossnms-2</version>
 
     <packaging>pom</packaging>
 
@@ -35,7 +35,7 @@
         <connection>scm:git:${wildfly.core.scm.connection}</connection>
         <developerConnection>scm:git:${wildfly.core.scm.connection}</developerConnection>
         <url>${wildfly.core.scm.url}</url>
-      <tag>wildfly-core-parent-22.0.2.Final-ossnms-1</tag>
+      <tag>wildfly-core-parent-22.0.2.Final-ossnms-2</tag>
   </scm>
 
     <!--

@@ -60,3 +60,5 @@ build.metadata
 # shaded jars
 **/dependency-reduced-pom.xml
 
+# ignore local settings file
+settings.xml

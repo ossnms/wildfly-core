@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.wildfly.core</groupId>
         <artifactId>wildfly-core-model-test</artifactId>
-        <version>22.0.2.Final-ossnms-2-SNAPSHOT</version>
+        <version>22.0.2.Final-ossnms-2</version>
     </parent>
     <!--
       Just here for the tests module to include as an optional dependency to avoid picking up
