@@ -5,15 +5,13 @@
   ~ SPDX-License-Identifier: Apache-2.0
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.wildfly.core</groupId>
         <artifactId>wildfly-core-testsuite</artifactId>
-        <version>27.0.1.Final-ossnms-2-SNAPSHOT</version>
+        <version>27.0.1.Final-ossnms-2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -203,9 +201,9 @@
                         <configuration>
                             <target>
                                 <copy file="${ts.config.elytron.cli.no.embedded}" toFile="${ts.config.elytron.cli}" overwrite="true">
-                                    <filterset begintoken="#" endtoken="#" >
-                                        <filter token="EMBED_SERVER" value="embed-server --admin-only=true"/>
-                                        <filter token="STOP_EMBED_SERVER" value="stop-embedded-server"/>
+                                    <filterset begintoken="#" endtoken="#">
+                                        <filter token="EMBED_SERVER" value="embed-server --admin-only=true" />
+                                        <filter token="STOP_EMBED_SERVER" value="stop-embedded-server" />
                                     </filterset>
                                 </copy>
                             </target>
@@ -233,7 +231,7 @@
                                 <offline-provisioning>true</offline-provisioning>
                                 <overwrite-provisioned-server>true</overwrite-provisioned-server>
                                 <galleon-options>
-                                    <jboss-maven-dist/>
+                                    <jboss-maven-dist />
                                     <jboss-fork-embedded>${galleon.fork.embedded}</jboss-fork-embedded>
                                 </galleon-options>
                                 <feature-packs>
@@ -304,7 +302,7 @@
                                      <offline-provisioning>true</offline-provisioning>
                                      <overwrite-provisioned-server>true</overwrite-provisioned-server>
                                      <galleon-options>
-                                         <jboss-maven-dist/>
+                                         <jboss-maven-dist />
                                          <jboss-fork-embedded>${galleon.fork.embedded}</jboss-fork-embedded>
                                          <optional-packages>passive+</optional-packages>
                                      </galleon-options>
@@ -421,7 +419,7 @@
                                         </cli-session>
                                     </packaging-scripts>
                                     <galleon-options>
-                                        <jboss-maven-dist/>
+                                        <jboss-maven-dist />
                                         <jboss-fork-embedded>${galleon.fork.embedded}</jboss-fork-embedded>
                                     </galleon-options>
                                     <feature-packs>
@@ -461,7 +459,7 @@
                                     <log-provisioning-time>${galleon.log.time}</log-provisioning-time>
                                     <offline-provisioning>true</offline-provisioning>
                                     <galleon-options>
-                                        <jboss-maven-dist/>
+                                        <jboss-maven-dist />
                                         <jboss-fork-embedded>${galleon.fork.embedded}</jboss-fork-embedded>
                                     </galleon-options>
                                     <feature-packs>

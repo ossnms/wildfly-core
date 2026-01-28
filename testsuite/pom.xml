@@ -30,15 +30,13 @@
 
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.wildfly.core</groupId>
         <artifactId>wildfly-core-parent</artifactId>
-        <version>27.0.1.Final-ossnms-2-SNAPSHOT</version>
+        <version>27.0.1.Final-ossnms-2</version>
     </parent>
 
     <artifactId>wildfly-core-testsuite</artifactId>
@@ -93,9 +91,9 @@
         <jvm.args.ip.client>${jvm.args.ip}</jvm.args.ip.client>
 
         <!-- Security. -->
-        <jvm.args.securityManager></jvm.args.securityManager>
-        <jvm.args.securityPolicy></jvm.args.securityPolicy>
-        <jvm.args.securityManagerOther></jvm.args.securityManagerOther>
+        <jvm.args.securityManager />
+        <jvm.args.securityPolicy />
+        <jvm.args.securityManagerOther />
         <jvm.args.security>${jvm.args.securityManager} ${jvm.args.securityPolicy} ${jvm.args.securityManagerOther}</jvm.args.security>
 
         <!-- Additional JVM args, like those for EC2. -->
@@ -105,7 +103,7 @@
         <jboss.http.bind.args>-Djboss.http.port=${jboss.http.port} -Djboss.bind.address=${jboss.bind.address}</jboss.http.bind.args>
         <jboss.args>${jboss.http.bind.args}</jboss.args>
         <!-- Domain server argument -->
-        <jboss.domain.server.args></jboss.domain.server.args>
+        <jboss.domain.server.args />
 
 
         <!-- Logging config -->
@@ -118,7 +116,7 @@
 
         <!-- Common surefire properties. -->
         <surefire.memory.args>-Xmx512m</surefire.memory.args>
-        <surefire.jpda.args></surefire.jpda.args>
+        <surefire.jpda.args />
         <as.debug.port>8787</as.debug.port>
         <surefire.jvm.args>${surefire.memory.args} ${modular.jdk.args} ${modular.jdk.props} -Djboss.dist=${jboss.dist} ${surefire.jacoco.args} -Djava.io.tmpdir=${project.build.directory}</surefire.jvm.args>
         <surefire.system.args>${surefire.jpda.args} ${surefire.jvm.args}</surefire.system.args>
@@ -306,7 +304,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <configuration>
                         <failIfNoTests>false</failIfNoTests>
-                        <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
+                        <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
                         <argLine>-Djava.util.logging.manager=org.jboss.logmanager.LogManager</argLine>
                         <systemPropertyVariables>
                             <jboss.dist>${jboss.dist}</jboss.dist>

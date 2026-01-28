@@ -11,12 +11,12 @@
       <artifactId>jboss-parent</artifactId>
       <version>47</version>
       <!-- The empty relativePath makes Maven lookup it in the repository. Missing tag default is ../pom.xml. -->
-      <relativePath/>
+      <relativePath />
     </parent>
 
     <groupId>org.wildfly.core</groupId>
     <artifactId>wildfly-core-parent</artifactId>
-    <version>27.0.1.Final-ossnms-2-SNAPSHOT</version>
+    <version>27.0.1.Final-ossnms-2</version>
 
     <packaging>pom</packaging>
 
@@ -35,7 +35,8 @@
         <connection>scm:git:${wildfly.core.scm.connection}</connection>
         <developerConnection>scm:git:${wildfly.core.scm.connection}</developerConnection>
         <url>${wildfly.core.scm.url}</url>
-    </scm>
+      <tag>wildfly-core-parent-27.0.1.Final-ossnms-2</tag>
+  </scm>
 
     <!--
         Build configuration.  Override JBoss Parent settings as necessary.
@@ -83,7 +84,7 @@
              By default server processes uses the union of whatever this property specifies
              plus the internal args from the launcher library. -->
         <modular.jdk.args>${standard.client.modular.jdk.args}</modular.jdk.args>
-        <modular.jdk.props></modular.jdk.props>
+        <modular.jdk.props />
 
         <!--
             See ChildFirstClassLoaderBuilder in model-test for the explanation of the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache properties.
@@ -106,7 +107,7 @@
         <maven.repository.url>${maven.repository.protocol}://repository.jboss.org/nexus/content/groups/public/</maven.repository.url>
 
         <!-- Surefire args -->
-        <surefire.jpda.args></surefire.jpda.args>
+        <surefire.jpda.args />
         <surefire.jvm.args>${modular.jdk.args} ${modular.jdk.props} -ea -Duser.region=US -Duser.language=en -Duser.timezone=America/Chicago
             ${surefire.jacoco.args} -Djava.io.tmpdir=${project.build.directory}</surefire.jvm.args>
         <surefire.system.args>${surefire.jpda.args} ${surefire.jvm.args}</surefire.system.args>
@@ -344,7 +345,7 @@
                         </dependency>
                     </dependencies>
                     <configuration>
-                        <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
+                        <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
                         <enableAssertions>true</enableAssertions>
                         <systemPropertyVariables>
                             <org.jboss.model.test.cache.root>${org.jboss.model.test.cache.root}</org.jboss.model.test.cache.root>
@@ -386,7 +387,7 @@
                         <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>
                         <excludes>**/*$logger.java,**/*$bundle.java</excludes>
-                        <useFile></useFile>
+                        <useFile />
                     </configuration>
                 </plugin>
 
@@ -470,7 +471,7 @@
                                             <exclude>org.jboss:jandex</exclude>
                                         </excludes>
                                     </bannedDependencies>
-                                    <dependencyConvergence></dependencyConvergence>
+                                    <dependencyConvergence />
                                 </rules>
                             </configuration>
                         </execution>
@@ -511,7 +512,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -524,7 +525,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -537,7 +538,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -550,7 +551,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -565,7 +566,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -578,7 +579,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -594,7 +595,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -607,7 +608,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -620,7 +621,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -2322,7 +2323,7 @@
                 </property>
             </activation>
             <properties>
-                <surefire.jacoco.args></surefire.jacoco.args>
+                <surefire.jacoco.args />
             </properties>
         </profile>
         <!--
