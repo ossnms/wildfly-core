@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.wildfly.core</groupId>
         <artifactId>wildfly-core-model-test</artifactId>
-        <version>27.0.1.Final-ossnms-2</version>
+        <version>27.0.1.Final-ossnms-3-SNAPSHOT</version>
     </parent>
 
     <artifactId>wildfly-core-model-test-framework</artifactId>
