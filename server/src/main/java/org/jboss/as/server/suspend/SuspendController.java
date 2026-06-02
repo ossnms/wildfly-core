@@ -118,16 +118,16 @@ public class SuspendController implements ServerSuspendController, SuspendableAc
             return SuspendableActivity.COMPLETED;
         }
         // Resume activity groups in reverse priority order, i.e. last -> first
-        CompletionStage<Void> resumeStage = phaseStage(this::resumeIterator, SuspendableActivity::resume, context, ServerLogger.ROOT_LOGGER::failedToResume);
-        resumeStage.whenComplete((ignore, exception) -> {
-            if (exception == null) {
-                this.state = State.RUNNING;
-                for (OperationListener listener: this.listeners) {
-                    listener.cancelled();
-                }
-            }
-        });
-        return resumeStage;
+        // Return the chained stage so callers that join() on it wait for state to be set to RUNNING (WFCORE-7178)
+        return phaseStage(this::resumeIterator, SuspendableActivity::resume, context, ServerLogger.ROOT_LOGGER::failedToResume)
+                .whenComplete((ignore, exception) -> {
+                    if (exception == null) {
+                        this.state = State.RUNNING;
+                        for (OperationListener listener: this.listeners) {
+                            listener.cancelled();
+                        }
+                    }
+                });
     }
 
     private Iterator<List<SuspendableActivity>> resumeIterator() {
