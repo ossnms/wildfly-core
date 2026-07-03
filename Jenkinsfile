@@ -1,3 +1,4 @@
 @Library('ossnms-lib@feature/wildfly') _
 
-wildflyCorePipeline()
+wildflyCorePipeline(downstreamBranchSelected: 'DEFAULT',
+                    downstreamBranchDefault: '35.x-ossnms')
